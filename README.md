@@ -57,7 +57,7 @@ credit-fraud-detection-supervised-learning/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-fraud-detection-supervised-learning.git
+git clone https://github.com/alt-hell/credit-fraud-detection-supervised-learning.git
 cd credit-fraud-detection-supervised-learning
 ```
 
@@ -133,9 +133,9 @@ A secondary threshold of ~0.15–0.20 was identified as the **business-optimal**
 
 ## 🎥 Video Walkthrough
 
-📹 **[Watch the recorded walkthrough (5–10 min)](YOUR_VIDEO_LINK_HERE)**
+📹 **> not available right now :)**
 
-> Replace `YOUR_VIDEO_LINK_HERE` with your Google Drive or YouTube Unlisted link.
+
 
 ---
 
@@ -157,5 +157,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-*Practical Exam — Supervised Learning | Fraud Analytics Simulation | November 2026*
+*Supervised Learning | Fraud Analytics Simulation | November 2026*
 # credit-fraud-detection-supervised-learning
