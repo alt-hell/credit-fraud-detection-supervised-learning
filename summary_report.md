@@ -27,7 +27,7 @@ Three strategies were evaluated on the training set only (the test set was kept 
 
 ## 3. Recommended Model & Threshold
 
-**🏆 Recommended: XGBoost Tuned at F1-Optimal Threshold (~0.35)**
+**Recommended: XGBoost Tuned at F1-Optimal Threshold (~0.35)**
 
 After hyperparameter tuning with `RandomizedSearchCV` (scoring = `average_precision`, 15 iterations, 3-fold CV), the XGBoost model achieved:
 
@@ -58,19 +58,7 @@ Scaling to 50,000 transactions, the model generates a net benefit of approximate
 
 ---
 
-## 5. What Would Be Improved in Production Deployment
-
-**Real-time scoring:** The current pipeline runs batch predictions. In production, the XGBoost model would be wrapped in a REST API (FastAPI + Docker) with sub-10ms latency SLOs, consuming a Kafka transaction stream for real-time scoring before payment authorisation.
-
-**Model drift monitoring:** Since fraud patterns evolve constantly (adversarial adaptation), we would deploy a monitoring layer (e.g., Evidently AI or Arize) to track feature distribution drift (PSI on V1–V28), prediction distribution shift, and live PR-AUC on weekly labelled batches. A drift alert triggers retraining.
-
-**Feedback loop & active learning:** Analyst review outcomes (confirmed fraud / false alarm) would be fed back as new labelled training data. A monthly retraining cadence with the latest fraud patterns, combined with an A/B shadow deployment of challenger models, ensures the system stays sharp without human blind spots.
-
-**Explainability for analysts:** SHAP values would be computed per flagged transaction so analysts immediately see *why* a transaction was flagged (e.g., "V14 was −8.2, 4σ below mean for legitimate transactions"), reducing investigation time and improving trust in the system.
-
-**Threshold governance:** The threshold would be a configurable parameter owned by the Risk team — not hardcoded — allowing dynamic adjustment during peak fraud seasons (e.g., festival sales) without redeployment.
-
 ---
 
-*Report prepared for: Fraud Analytics Practical Exam — Supervised Learning*  
+*Report prepared for: Fraud Analytics — Supervised Learning*  
 *Date: November 2026*
