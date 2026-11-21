@@ -9,7 +9,7 @@
 
 ## 🏢 Project Context
 
-This project was completed as a **6-hour Practical Exam** simulating the role of a Junior Data Scientist on the Fraud Analytics team of a digital payments company (similar to Paytm / Razorpay). The goal is to build a production-grade fraud detection pipeline that handles **extreme class imbalance (0.17% fraud)** and optimises the classification threshold for maximum business value — not just ML accuracy.
+This project was completed as a **6-hour Practical Exam** simulating the role of a Data Scientist on the Fraud Analytics team of a digital payments company (similar to Paytm / Razorpay). The goal is to build a production-grade fraud detection pipeline that handles **extreme class imbalance (0.17% fraud)** and optimises the classification threshold for maximum business value — not just ML accuracy.
 
 ---
 
